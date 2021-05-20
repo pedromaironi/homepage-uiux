@@ -29,12 +29,12 @@
   --font-semi-bold: 600;
 
   /*========== Margenes ==========*/
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
+  --mb-1: .5rem;        /* 8px */
+  --mb-2: 1rem;        /* 16px */
+  --mb-3: 1.5rem;    /* 24px */
+  --mb-4: 2rem;       /* 32px */
+  --mb-5: 2.5rem;    /* 40px */
+  --mb-6: 3rem;       /* 48px */
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -108,11 +108,48 @@ img{
 }
 
 /*========== CLASS CSS ==========*/
+.section {
+  padding: 4rem 0 2rem;
+}
 
+.section-title, .section-subtitle{
+  text-align: center;
+}
 
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+  display: block;
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
 /*========== LAYOUT ==========*/
 
+.bd-container{
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
 
+.bd-grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.main-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
 /*========== NAV ==========*/
 
 @media screen and (max-width: 768px){
