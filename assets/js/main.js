@@ -59,7 +59,12 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 /*==================== SHOW SCROLL TOP ====================*/ 
+function scrollTop() {
+  const scrolltop = document.getElementById('scroll-top');
+  if(this.scrollY >= 560) scrolltop.classList.add('scroll-top'); else scrolltop.classList.remove('scroll-top');
+}
 
+window.addEventListener('scroll', scrollTop);
 
 /*==================== DARK LIGHT THEME ====================*/ 
 

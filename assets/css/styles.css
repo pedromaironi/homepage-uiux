@@ -105,6 +105,7 @@ a{
 img{
   max-width: 100%;
   height: auto;
+  background-repeat: no-repeat;
 }
 
 /*========== CLASS CSS ==========*/
@@ -161,6 +162,9 @@ img{
 }
 
 @media screen and (max-width: 768px){
+  .section {
+    padding: .8rem 0 2rem;
+  }
   .nav__menu {
     position: fixed;
     /* top: var(--header-height); */
@@ -179,8 +183,17 @@ img{
 
 .nav__item {
   margin-bottom: var(--mb-2);
+  transition: .3s;
 }
 
+.nav__toggle {
+  margin-right: var(--mb-2);
+  transition: .3s;
+}
+
+.nav__logo{
+  margin-left: var(--mb-2);
+}
 .nav__link, .nav__logo, .nav__toggle{
   color: var(--text-color);
   font-weight: var(--font-medium);
@@ -222,7 +235,7 @@ img{
 .scrolltop{
   position: fixed;
   right: 1rem;
-  bottom: 1rem;
+  bottom: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,25 +244,83 @@ img{
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
+  visibility: hidden;
 }
 
 .scrolltop:hover{
+  background-color: var(--first-color-alt);
 }
 
 .scrolltop__icon{
+  font-size: 1.8rem;
+  color: var(--body-color);
 }
 
 /* Show scrolltop */
 .show-scroll{
+
 }
 
+.scroll-top {
+  visibility: visible;
+  bottom: 1.5rem;
+}
 /*========== HOME ==========*/
+.home__container{
+  align-content: center;
+}
+.home__img {
+  width: 300px;
+  justify-self: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.home__subtitle {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-4);
+}
+
 
 /*========== BUTTONS ==========*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
 
 /*========== ABOUT ==========*/
 
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: var(--mb-3);
+}
+
+.about__data>.button {
+  margin-top: var(--mb-1);
+}
+
+
+.about__img{
+  width: 280px;
+  justify-self: center;
+  border-radius: .5rem;
+}
 /*========== SERVICES ==========*/
 
 
