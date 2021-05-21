@@ -13,7 +13,15 @@
   --text-color-light: #A6A6A6;
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
-
+  --bitcoin-orange: #F7931A;
+  --soft-orange: #FFE9D4;
+  --secondary-blue: #1A9AF7;
+  --soft-blue: #E7F5FF;
+  --warm-black: #201E1C;
+  --warm-black-light: #282623;
+  -grey: #BABABA;
+  --ofwhite: #FAF8F7;
+  --just-white: #ffffff;
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
@@ -131,7 +139,7 @@ img{
 }
 /*========== LAYOUT ==========*/
 
-.bd-container{
+.bd-container {
   max-width: 960px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
@@ -322,7 +330,32 @@ img{
   border-radius: .5rem;
 }
 /*========== SERVICES ==========*/
+.service__card--title{
+  font-size: var(--h2-font-size);
+}
 
+.service__cad--subtitle {
+
+}
+.services__container--main {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.services__card--detail {
+  width: 100%;
+  min-width: 288px;
+  min-height: auto;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--first-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .16);
+  color: var(--just-white)
+}
 
 /*========== MENU ==========*/
 
