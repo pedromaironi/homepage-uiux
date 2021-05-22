@@ -357,11 +357,80 @@ img{
   color: var(--just-white)
 }
 
-/*========== MENU ==========*/
+/*========== OFFERS ==========*/
+.img__offers {
+  background-color: #FFF;
+  width: 200px;
+  align-self: center;
+}
+
+.offers__container {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin-bottom: var(--mb-2);
+}
+
+.offers__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+  padding: .75rem;
+}
+
+.offer__name, .offer__price {
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.offer__name{
+  font-size: var(--normal-font-size);
+}
+
+.offer__detail, .offer__price {
+  font-size: var(--small-font-size);
+}
+
+.offer__detail{
+  margin-bottom: var(--mb-1);
+}
+
+.offer__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: .625rem .813rem;
+  border-radius: .5rem 0 .5rem 0;
+}
+
 
 /*========== APP ==========*/
 
+.app__data {
+  text-align: center;
+}
 
+.app__description {
+  margin-bottom: var(--mb-5);
+
+}
+
+.app__stores {
+  margin-bottom: var(--mb-4);
+}
+
+.app__store{
+  width: 120px;
+  margin: 0 var(--mb-1);
+}
+
+.app__img {
+  width: 430px;
+  justify-self: center;
+}
 /*========== CONTACT ==========*/
 
 /*========== FOOTER ==========*/
